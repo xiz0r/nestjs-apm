@@ -1,7 +1,8 @@
 # nestjs-apm
 
+## Installation
 ```
-npm i nestjs-apm
+$ npm i nestjs-apm
 ```
 ## NestJs config
 ### main.ts (first line)
