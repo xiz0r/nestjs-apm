@@ -24,4 +24,12 @@ export class ApmService {
   startSpan(name) {
     return this.apm.startSpan(name);
   }
+
+  setCustomContext(context) {
+    return this.apm.setCustomContext(context);
+  }
+
+  setTag(name, value) {
+    return this.apm.setTag(name, value);
+  }
 }
