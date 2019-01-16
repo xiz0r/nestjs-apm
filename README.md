@@ -36,3 +36,10 @@ import { ApmModule } from 'nestjs-apm';
 })
 export class AppModule { }
 ```
+
+### Env variables
+```
+ELASTIC_APM_SERVER_URL=
+ELASTIC_APM_LOG_LEVEL=
+ELASTIC_APM_SERVICE_NAME=
+```
