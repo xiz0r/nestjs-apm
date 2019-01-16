@@ -1,6 +1,6 @@
 {
   "name": "nestjs-apm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NestJs Elastic APM Module",
   "directories": {
     "lib": "lib"
@@ -9,7 +9,7 @@
     "build": "rm -rf dist && tsc -p tsconfig.json",
     "precommit": "lint-staged",
     "prepublish:npm": "npm run build",
-    "publish:npm": "npm publish --access public"
+    "publish:npm": "npm publish"
   },
   "repository": {
     "type": "git",
