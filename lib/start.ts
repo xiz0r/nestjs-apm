@@ -1,2 +1,2 @@
-const apm = require('elastic-apm-node');
-module.exports = apm.start();
+const apm = require('elastic-apm-node').start();
+export default apm;
