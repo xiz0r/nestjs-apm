@@ -1,10 +1,10 @@
-# nestjs-apm
+# nestjs-apm-v4
 
 ## Installation
 ```
 $ npm i nestjs-apm-v4
 ```
-## NestJs config
+## NestJs 4 config
 ### main.ts (first line)
 
 ```
