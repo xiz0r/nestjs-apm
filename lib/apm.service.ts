@@ -1,7 +1,7 @@
-import { Injectable } from '@nestjs/common';
+import { Component } from '@nestjs/common';
 import * as APM from 'elastic-apm-node';
 
-@Injectable()
+@Component()
 export class ApmService {
   apm: any;
 
