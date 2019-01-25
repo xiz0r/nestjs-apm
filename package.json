@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xiz0r/nestjs-apm.git"
+    "url": "git+https://github.com/xiz0r/nestjs-apm/tree/feature/nest4"
   },
   "keywords": [
     "NestJS",

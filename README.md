@@ -2,13 +2,13 @@
 
 ## Installation
 ```
-$ npm i nestjs-apm
+$ npm i nestjs-apm-v4
 ```
 ## NestJs config
 ### main.ts (first line)
 
 ```
-import { apm } from 'nestjs-apm';
+import { apm } from 'nestjs-apm-v4';
 ...
 ```
 
@@ -16,13 +16,23 @@ import { apm } from 'nestjs-apm';
 if (apm.isStarted()) {
 	console.log('APM running');
 }
+
+...
+// Register global interceptor
+  const apmInterceptor = app
+    .select(ApmModule)
+    .get(ApmInterceptor);
+  app.useGlobalInterceptors(apmInterceptor);
+
+  await app.listen(3000);
+
 ```
 
 ### app.module.ts
 
 ```
 ...
-import { ApmModule } from 'nestjs-apm';
+import { ApmModule } from 'nestjs-apm-v4';
 ...
 ```
 
