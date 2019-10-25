@@ -1,16 +1,15 @@
-# nestjs-apm-v6
+# nestjs-apm
 
-Project forked from https://github.com/xiz0r/nestjs-apm.git with a fix for nestjs V6
 
 ## Installation
 ```
-$ npm i nestjs-apm-v6
+$ npm i nestjs-apm
 ```
 ## NestJs config
 ### main.ts (first line)
 
 ```
-import { apm } from 'nestjs-apm-v6';
+import { apm } from 'nestjs-apm';
 ...
 ```
 
@@ -24,7 +23,7 @@ if (apm.isStarted()) {
 
 ```
 ...
-import { ApmModule } from 'nestjs-apm-v6';
+import { ApmModule } from 'nestjs-apm';
 ...
 ```
 
