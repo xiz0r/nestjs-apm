@@ -1,7 +1,7 @@
 {
-  "name": "nestjs-apm",
-  "version": "1.0.8",
-  "description": "NestJs Elastic APM Module",
+  "name": "nestjs-apm-v6",
+  "version": "1.0.0",
+  "description": "NestJs v6 Elastic APM Module",
   "directories": {
     "lib": "lib"
   },
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xiz0r/nestjs-apm.git"
+    "url": "git+https://github.com/enissay-git/nestjs-apm-v6.git"
   },
   "keywords": [
     "NestJS",
@@ -21,11 +21,14 @@
     "APM"
   ],
   "author": "Juan Colo",
+  "contributors": [
+    "Enissay-git <https://github.com/enissay-git> (https://github.com/enissay-git)"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xiz0r/nestjs-apm/issues"
+    "url": "https://github.com/enissay-git/nestjs-apm-v6/issues"
   },
-  "homepage": "https://github.com/xiz0r/nestjs-apm#readme",
+  "homepage": "https://github.com/enissay-git/nestjs-apm-v6#readme",
   "dependencies": {
     "elastic-apm-node": "^2.1.0"
   },
