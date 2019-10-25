@@ -4,7 +4,7 @@ Project forked from https://github.com/xiz0r/nestjs-apm.git with a fix for nestj
 
 ## Installation
 ```
-$ npm i nestjs-apm
+$ npm i nestjs-apm-v6
 ```
 ## NestJs config
 ### main.ts (first line)
