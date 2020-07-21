@@ -14,6 +14,7 @@ import { apm } from 'nestjs-apm';
 ```
 
 ```
+apm.start();
 if (apm.isStarted()) {
 	console.log('APM running');
 }
