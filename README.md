@@ -1,14 +1,18 @@
 # nestjs-apm
 
-
 ## Installation
+
 ```
 $ npm i nestjs-apm
 ```
+
 ## NestJs config
+
 ### main.ts (first line)
 
 ```
+import * as dotenv from 'dotenv';
+dotenv.config(); //
 import { apm } from 'nestjs-apm';
 ...
 ```
@@ -28,7 +32,7 @@ import { ApmModule } from 'nestjs-apm';
 ```
 
 ```
-@NgModule({
+@Module({
   ...
   imports: [
     ...,
@@ -39,9 +43,38 @@ import { ApmModule } from 'nestjs-apm';
 export class AppModule { }
 ```
 
-### Env variables
+### Usage in the service
+
 ```
-ELASTIC_APM_SERVER_URL=
-ELASTIC_APM_LOG_LEVEL=
-ELASTIC_APM_SERVICE_NAME=
+...
+import { ApmService } from 'nestjs-apm';
+...
+
+...
+@Injectable()
+export class TestService {
+  constructor(private readonly apmService: ApmService) {}
+
+  doSomething(): void {
+    const span = this.apmService.startSpan('Custom span name');
+    ....
+    span.end();
+  }
+}
+...
+```
+
+### Env variables
+
+```
+# Override service name from package.json
+ELASTIC_APM_SERVICE_NAME
+# Use if APM Server requires a token
+ELASTIC_APM_SECRET_TOKEN
+# Use if APM Server uses API keys for authentication
+ELASTIC_APM_API_KEY
+# Set custom APM Server URL (default: http://localhost:8200)
+ELASTIC_APM_SERVER_URL
+# Set 'true' value to enable APM agent
+ELASTIC_APM_ACTIVATE
 ```
