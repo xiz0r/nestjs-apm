@@ -1,6 +1,6 @@
 {
   "name": "nestjs-elastic-apm",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "NestJs Elastic APM Module",
   "directories": {
     "lib": "lib"
