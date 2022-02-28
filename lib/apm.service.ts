@@ -14,7 +14,10 @@ export class ApmService {
     this.apm.captureError(data);
   }
 
-  startTransaction(name?: string, options?: apm.TransactionOptions): apm.Transaction {
+  startTransaction(
+    name?: string,
+    options?: apm.TransactionOptions
+  ): apm.Transaction | null {
     return this.apm.startTransaction(name, options);
   }
 
@@ -22,7 +25,7 @@ export class ApmService {
     this.apm.setTransactionName(name);
   }
 
-  startSpan(name?: string, options?: apm.SpanOptions): apm.Span {
+  startSpan(name?: string, options?: apm.SpanOptions): apm.Span | null {
     return this.apm.startSpan(name, options);
   }
 
