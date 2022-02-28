@@ -8,8 +8,7 @@
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig.json",
     "precommit": "lint-staged",
-    "prepublish:npm": "npm run build",
-    "publish:npm": "npm publish"
+    "publish:npm": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
