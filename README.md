@@ -1,9 +1,9 @@
-# nestjs-apm
+# nestjs-elastic-apm
 
 ## Installation
 
 ```
-$ npm i nestjs-apm
+$ npm i nestjs-elastic-apm
 ```
 
 ## NestJs config
@@ -13,7 +13,7 @@ $ npm i nestjs-apm
 ```
 import * as dotenv from 'dotenv';
 dotenv.config(); //
-import { apm } from 'nestjs-apm';
+import apm from 'elastic-apm-node';
 ...
 ```
 
@@ -27,7 +27,7 @@ if (apm.isStarted()) {
 
 ```
 ...
-import { ApmModule } from 'nestjs-apm';
+import { ApmModule } from 'nestjs-elastic-apm';
 ...
 ```
 
@@ -47,7 +47,7 @@ export class AppModule { }
 
 ```
 ...
-import { ApmService } from 'nestjs-apm';
+import { ApmService } from 'nestjs-elastic-apm';
 ...
 
 ...
