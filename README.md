@@ -70,4 +70,6 @@ ELASTIC_APM_API_KEY
 ELASTIC_APM_SERVER_URL
 # Set 'true' value to enable APM agent
 ELASTIC_APM_ACTIVATE
+# Set comma-separated values to disable particular modules to be instrumented
+ELASTIC_APM_DISABLE_INSTRUMENTATIONS
 ```

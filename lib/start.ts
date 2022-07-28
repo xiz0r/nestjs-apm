@@ -15,6 +15,10 @@ if (process.env.ELASTIC_APM_API_KEY) {
 if (process.env.ELASTIC_APM_SERVER_URL) {
   options['serverUrl'] = process.env.ELASTIC_APM_SERVER_URL;
 }
+if (process.env.ELASTIC_APM_DISABLE_INSTRUMENTATIONS) {
+  options['disableInstrumentations'] =
+    process.env.ELASTIC_APM_DISABLE_INSTRUMENTATIONS.split(',');
+}
 
 const apm: apmAgent.Agent = apmAgent.start(options);
 export { apm };
