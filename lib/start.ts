@@ -52,13 +52,10 @@ if (process.env.ELASTIC_APM_CAPTURE_BODY) {
   if (
     process.env.ELASTIC_APM_CAPTURE_BODY === 'all' ||
     process.env.ELASTIC_APM_CAPTURE_BODY === 'off' ||
+    process.env.ELASTIC_APM_CAPTURE_BODY === 'transactions' ||
     process.env.ELASTIC_APM_CAPTURE_BODY === 'errors'
   )
     options['captureBody'] = process.env.ELASTIC_APM_CAPTURE_BODY;
-}
-if (process.env.ELASTIC_APM_LOG_UNCAUGHT_EXCEPTIONS) {
-  options['logUncaughtExceptions'] =
-    process.env.ELASTIC_APM_LOG_UNCAUGHT_EXCEPTIONS === 'true';
 }
 
 if (process.env.ELASTIC_APM_CAPTURE_ERROR_LOG_STACK_TRACES) {
